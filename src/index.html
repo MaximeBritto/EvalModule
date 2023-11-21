@@ -1,0 +1,174 @@
+<!-- src/index.html -->
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dark:bg-slate-900 dark:text-white pb-8 text-sm">
+
+        <div class="w-full flex justify-center py-8">
+            <button id="theme-toggle"
+                class="p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white">
+                Toggle theme
+            </button>
+        </div>
+        <!-- Ecrivez le contenu à partir d'ici et supprimez le bloc suivant avant de commencer -->
+        <div>
+            <div>
+                <div class=" bg-whiteBg-100 dark:bg-blackBg w-96 border-gray-500 rounded border-2 mx-auto my-8  p-5">
+                    <div class="flex justify-between items-center">
+                        <div class="bg-whiteBg-100 dark:bg-blackBg p-2 rounded-btnRadius">
+                            <svg class="w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 18L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="bg-whiteBg-200 dark:bg-blackBg dark:border dark:border-solid dark:rounded-full p-3 rounded-full">
+                            <div class="flex items-center space-x-2">
+                                <p class="font-bold">Take The Quiz</p>
+                                <div class="bg-black dark:bg-whiteBg-100 p-2 rounded-btnRadius">
+                                    <svg class="w-3 text-whiteBg-100 dark:text-blackBg"  id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                        xml:space="preserve" fill="currentColor">
+                                        <g id="XMLID_1_">
+                                            <path id="XMLID_3_" d="M285.8,362.1h-1.9c-4.7,0.9-8.4,2.8-12.1,5.6l-79.1,79.1c-16.8,16.8-39.1,26.1-63.3,26.1
+		s-46.5-9.3-63.3-26.1C49.3,430.1,40,407.7,40,383.5c0-24.2,9.3-46.5,26.1-63.3l84.7-84.7c4.7-4.7,9.3-8.4,14-11.2
+		c5.6-3.7,12.1-6.5,18.6-9.3c5.6-1.9,12.1-3.7,18.6-4.7c3.7-0.9,8.4-0.9,12.1-0.9c1.9,0,3.7,0,5.6,0c21.4,0.9,41.9,10.2,57.7,26.1
+		c9.3,9.3,16.8,21.4,21.4,33.5c3.7,10.2,14,15.8,24.2,12.1l0,0l0,0c10.2-2.8,15.8-14,13-23.3c-5.6-19.5-14.9-35.4-30.7-50.3
+		c-19.5-19.5-43.8-31.7-70.7-36.3c-2.8,0-4.7-0.9-7.4-0.9c-4.7-0.9-9.3-0.9-14-0.9c-2.8,0-6.5,0-9.3,0c-6.5,0.9-13,1.9-19.5,2.8
+		c-0.9,0-2.8,0.9-3.7,0.9c-8.4,1.9-16.8,5.6-24.2,9.3c-13,6.5-24.2,14-34.4,24.2l-84.7,84.7C13,315.6,0,348.2,0,382.6
+		s13,67,38.2,91.2c24.2,24.2,56.8,37.2,91.2,37.2s67-13,91.2-38.2l80.1-80.1C313.7,381.7,303.5,360.3,285.8,362.1z" />
+                                            <path id="XMLID_4_" d="M473.8,39.1C449.6,14.9,417,0.9,382.6,0.9s-67,13-91.2,38.2l-79.1,78.2c-12.1,12.1-4.7,32.6,12.1,33.5
+		c5.6,0.9,11.2-1.9,15.8-5.6L318.4,67C335.1,50.3,357.5,41,381.7,41c24.2,0,46.5,9.3,63.3,26.1c16.8,16.8,26.1,39.1,26.1,63.3
+		s-9.3,46.5-26.1,63.3l-84.7,84.7c-4.7,4.7-9.3,8.4-14,11.2c-5.6,3.7-12.1,6.5-18.6,9.3c-5.6,1.9-12.1,3.7-18.6,4.7
+		c-3.7,0.9-8.4,0.9-12.1,0.9c-1.9,0-3.7,0-5.6,0c-21.4-0.9-41.9-10.2-57.7-26.1c-9.3-9.3-15.8-19.5-20.5-31.7
+		c-3.7-9.3-14-14.9-23.3-12.1c-11.2,2.8-17.7,14-14,25.1c5.6,17.7,14.9,31.7,28.9,46.5l0,0c20.5,20.5,48.4,33.5,78.2,37.2
+		c4.7,0.9,9.3,0.9,14,0.9c2.8,0,6.5,0,9.3,0c8.4-0.9,15.8-1.9,24.2-3.7c8.4-1.9,16.8-5.6,24.2-9.3c13-6.5,24.2-14,34.4-24.2
+		l84.7-84.7c24.2-24.2,38.2-56.8,38.2-91.2C512,95.9,498,63.3,473.8,39.1z" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="img/hydross93_do_naruto_45f3cbca-d91e-4755-aea2-4b037eec2a3e.png" alt=""
+                                class="h-8 w-8 object-fit rounded-btnRadius">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1 class="text-5xl">Simplify your health
+                            <span class="inline-block ml-2">
+                                <div class="w-10 h-10">
+                                    <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        style="width: 100%; height: 100%;">
+                                        <rect x="0.255737" y="0.52829" width="35.4113" height="65.2004" rx="17.7057"
+                                            fill="#D9EAFD" transform="rotate(15)" />
+                                    </svg>
+                                </div>
+                            </span>
+                            and wellbeing.
+                            <span class="inline-block ml-2 align-middle">
+                                <div class="w-12 h-12">
+                                    <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        style="width: 100%; height: 100%;">
+                                        <rect x="0.61084" y="30.7361" width="70.7011" height="9.79788" rx="4.89894"
+                                            fill="#FEF189" />
+                                        <rect x="40.8604" y="0.533691" width="70.7011" height="9.79788" rx="4.89894"
+                                            transform="rotate(90 40.8604 0.533691)" fill="#FEF189" />
+                                        <rect x="15.977" y="15.8999" width="39.9687" height="39.9687" rx="19.9844"
+                                            fill="#FEF189" />
+                                    </svg>
+                                </div>
+                            </span>
+                        </h1>
+                    </div>
+
+                    <!-- Ecrivez le contenu à partir d'ici et supprimez le bloc suivant avant de commencer -->
+                    <div class="  border-gray-500 rounded border-2 mx-auto my-4  ">
+                        <div class="flex justify-between">
+                        <div class="flex items-center p-2">
+                            <div class="bg-whiteBg-200 dark:bg-blackBg h-fit rounded-full">
+                                <div class="flex items-center space-x-2 rounded-full border border-solid p-0.5">
+                                    <p class="font-bold p-1">About</p>
+                                </div>
+
+                            </div>
+                         <div class="flex w-fit p-2  rounded-full font-bold bg-whiteBg-100 dark:bg-blackBg">
+                                    <div>
+                                        <svg class="w-5 rounded-full border border-solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path fill="currentColor" d="M134.71 189.19a4 4 0 0 1 0 5.66l-9.94 9.94a52 52 0 0 1-73.56-73.56l24.12-24.12a52 52 0 0 1 71.32-2.1a4 4 0 1 1-5.32 6A44 44 0 0 0 81 112.77l-24.13 24.12a44 44 0 0 0 62.24 62.24l9.94-9.94a4 4 0 0 1 5.66 0Zm70.08-138a52.07 52.07 0 0 0-73.56 0l-9.94 9.94a4 4 0 1 0 5.71 5.68l9.94-9.94a44 44 0 0 1 62.24 62.24L175 143.23a44 44 0 0 1-60.33 1.77a4 4 0 1 0-5.32 6a52 52 0 0 0 71.32-2.1l24.12-24.12a52.07 52.07 0 0 0 0-73.57Z"/></svg>
+                                    </div>
+                                </div>
+
+                               
+
+                        </div>
+                        <div class="flex w-fit p-4  rounded-full font-bold bg-whiteBg-100 dark:bg-blackBg">
+                            <div class="">
+                        <svg class="w-5 rounded-full border border-solid "  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M13 6.5V11h4.5v2H13v4.5h-2V13H6.5v-2H11V6.5h2Z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="relative  rounded-[10px] overflow-hidden">
+                            <div class="relative z-10 mt-12 pl-5 ">
+
+                                <div class="flex w-fit p-2 mb-3 rounded-full font-bold bg-whiteBg-100 dark:bg-blackBg">
+                                    <div>
+                                        <svg class="w-7 rounded-full border border-solid"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M19.435 5.055h-.97c.01-.12.02-.24.02-.36a1.645 1.645 0 0 0-.45-1.18a1.462 1.462 0 0 0-1.05-.45h-9.96a1.484 1.484 0 0 0-1.06.45a1.6 1.6 0 0 0-.44 1.18c0 .12.01.24.02.36h-.98a1.5 1.5 0 0 0-1.5 1.5v2a4.5 4.5 0 0 0 4.27 4.49c1.07 2.3 2.53 3.79 4.17 4.04v2.85h-4a.5.5 0 1 0 0 1h9a.5.5 0 0 0 0-1h-4v-2.85c1.64-.25 3.1-1.74 4.17-4.04a4.493 4.493 0 0 0 4.26-4.49v-2a1.5 1.5 0 0 0-1.5-1.5Zm-15.37 3.5v-2a.5.5 0 0 1 .5-.5h1.04a22.9 22.9 0 0 0 1.28 5.93a3.5 3.5 0 0 1-2.82-3.43Zm7.94 7.57c-2.82 0-5.23-5.04-5.48-11.47a.573.573 0 0 1 .16-.44a.48.48 0 0 1 .34-.15h9.96a.442.442 0 0 1 .33.15a.62.62 0 0 1 .17.44c-.25 6.43-2.66 11.47-5.48 11.47Zm7.93-7.57a3.508 3.508 0 0 1-2.8 3.42a23.353 23.353 0 0 0 1.27-5.92h1.03a.5.5 0 0 1 .5.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg class="w-7 rounded-full border border-solid"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <path fill="currentColor"
+                                                d="M16 3.969a3.266 3.266 0 0 0-2.75 1.5l-2.813 4.625l1.72 1.031l2.812-4.594c.539-.804 1.562-.824 2.094 0l3.125 5l-1.5.875L23.313 15V9.687l-1.438.844L18.75 5.47A3.266 3.266 0 0 0 16 3.97zm-5.594 8.125l-4.5 2.594l1.25.75l-2.562 4.218l-.032-.031c-.011.02.012.043 0 .063C3.09 21.918 4.79 25 7.5 25H13v-2H7.5c-1.266 0-1.945-1.25-1.281-2.219l.031-.031v-.031l2.625-4.25l1.531.937zm14.656 3.562l-1.718 1.063l2.5 4c.64 1.09-.086 2.281-1.25 2.281H19v-2l-4.906 3L19 27v-2h5.594c2.636 0 4.328-3 2.968-5.313v-.03z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg class="w-7 rounded-full border border-solid"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                            <path fill="currentColor"
+                                                d="M221.45 40.19a6 6 0 0 0-5.64-5.64C140.43 30.11 80.14 52.71 54.53 95c-17.44 28.79-16.76 62.8 1.79 96.2l-20.56 20.56a6 6 0 1 0 8.48 8.48l20.56-20.56c17.27 9.59 34.7 14.41 51.49 14.41A85.38 85.38 0 0 0 161 201.47c42.29-25.61 64.88-85.9 60.45-161.28Zm-66.66 151c-24.08 14.58-52.64 14.37-81.13-.39l90.59-90.59a6 6 0 0 0-8.48-8.48l-90.59 90.61c-14.76-28.49-15-57-.39-81.13c22.68-37.43 76.63-57.8 145-54.95c2.8 68.32-17.57 122.28-55 144.95Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <h1></h1>
+                            <img src="img/womenDrink.png" alt="hero"
+                                class="absolute top-0 left-0  object-cover z-1 pl-2 pr-2">
+                        </div>
+                        <div class="pl-2">
+                        <div
+                            class="flex justify-between w-fit mt-2 p-4 space-x-[6rem] mb-3 rounded-full font-bold bg-black text-whiteBg-200 items-center">
+                            <p>Unclock personalized plan</p>
+                            <svg class="svg-icon rotate-180 "
+                                style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M426.65984 170.65984q17.67424 0 30.16704 12.4928t12.4928 30.16704q0 18.00192-12.67712 30.33088l-225.66912 225.66912 665.00608 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-665.00608 0 225.66912 225.66912q12.67712 12.32896 12.67712 30.33088 0 17.67424-12.4928 30.16704t-30.16704 12.4928q-18.00192 0-30.33088-12.32896l-298.65984-298.65984q-12.32896-13.0048-12.32896-30.33088t12.32896-30.33088l298.65984-298.65984q12.67712-12.32896 30.33088-12.32896z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    </div>
+                    <script>
+                        const btn = document.getElementById("theme-toggle");
+                        btn.addEventListener("click", function () {
+                            document.body.classList.toggle("dark");
+                        });
+                    </script>
+</body>
+
+</html>
