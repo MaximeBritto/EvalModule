@@ -10,9 +10,19 @@
         "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximeBritto/EvalModule.git"
+},
+"bugs": {
+  "url": "https://github.com/MaximeBritto/EvalModule/issues"
+},
+"homepage": "https://github.com/MaximeBritto/EvalModule#readme",
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.3.5",
+    "gh-pages": "^6.1.0"
+
   }
 }
